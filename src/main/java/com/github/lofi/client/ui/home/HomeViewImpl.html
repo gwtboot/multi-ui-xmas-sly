@@ -1,0 +1,22 @@
+<div ui-field="root">
+	<h4>Home</h4>
+	
+	<div class="demo-component-wrapper" style="margin-bottom: 15px">
+		<!-- Connect dncomponents or native elements with ui-field attribute to java/typescript code. -->
+		<dn-button ui-field="btnPrimary" color="INFO">INFO</dn-button>
+
+		<div ui-field="divElement" class="bg-success text-white mt-2 p-2 w-50">
+			This is a div, click me!</div>
+
+		<div class="mt-2">
+			<dn-radio-selection-group ui-field="radioGroup">
+			<dn-radio itemId="first"> Radio 1 </dn-radio> <dn-radio
+				itemId="second"> Radio 2 </dn-radio> </dn-radio-selection-group>
+		</div>
+
+		<div ui-field="checkBoxPanel" class="mt-2"></div>
+	</div>
+
+	<!-- Add css class to component with addclass attribute -->
+	<dn-text-area ui-field="eventsTa" addclass="w-50"></dn-text-area>
+</div>
