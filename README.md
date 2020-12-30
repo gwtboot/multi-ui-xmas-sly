@@ -6,8 +6,6 @@ Why? To see that we can combine every UI frameworks in one GWT webapp.
 
 This example uses GWT Boot as Starter Parent: https://github.com/gwtboot/gwt-boot-samples
 
-Take a look at this article to see the whole story: http://bit.ly/WebJavaStory
-
 To build the example:
 ```
 mvn clean package
