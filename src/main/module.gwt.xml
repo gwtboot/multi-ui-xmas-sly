@@ -1,7 +1,7 @@
 <module rename-to="gwtdemo">
 	<inherits name="com.github.gwtboot.starter.Dagger2Starter"/>
 	<inherits name="com.github.gwtboot.starter.VueGwtStarter"/>
-	<!-- <inherits name="com.github.gwtboot.starter.DominoStarter"/>  -->
+	<!-- <inherits name="com.github.gwtboot.starter.DominoStarter"/> -->
 	<inherits name="com.github.gwtboot.starter.DncomponentsStarter"/>
 	
 	<entry-point class='com.github.lofi.client.DemoAppEntryPoint' />

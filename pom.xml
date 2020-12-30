@@ -36,6 +36,10 @@
 			<groupId>com.github.gwtboot</groupId>
 			<artifactId>gwt-boot-starter-ui-dncomponents</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.github.gwtboot</groupId>
+			<artifactId>gwt-boot-starter-ui-domino</artifactId>
+		</dependency>
 
 		<!-- Unit Test with Mockito and JUnit -->
 		<dependency>
