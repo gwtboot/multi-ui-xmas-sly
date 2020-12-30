@@ -8,7 +8,11 @@ This example uses GWT Boot as Starter Parent: https://github.com/gwtboot/gwt-boo
 
 ## Examples of Multi UIs
 
+### DnComponents
+
 ![Multi UI Home DnComponents](src/doc/multi-ui-home-dncomponents.png?raw=true "Multi UI Home DnComponents")
+
+### VueGWT
 
 ![Multi UI Counter VueGWT](src/doc/multi-ui-counter-vuegwt.png?raw=true "Multi UI Counter VueGWT")
 
