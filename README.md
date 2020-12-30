@@ -1,5 +1,8 @@
-# jsinterop-simple-example
-**Simple Example using GWT JsInterop**
+# multi-ui-xmas-sly
+
+**Simple Example Using all GWT UI frameworks in One Webapp**
+
+Why? To see that we can combine every UI frameworks in one GWT webapp. 
 
 This example uses GWT Boot as Starter Parent: https://github.com/gwtboot/gwt-boot-samples
 
