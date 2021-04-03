@@ -63,18 +63,37 @@
 	<build>
 		<plugins>
 			<!-- Annotation processor Java compiler -->
+			<!-- See https://stackoverflow.com/questions/32194069/how-do-i-run-annotation-processing-via-maven-3-3 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
-				<configuration>
-					<compilerArgs>
-						<arg>-Aregister=AppTemplates</arg>
-					</compilerArgs>
-					<annotationProcessors>
-						<annotationProcessor>com.dncomponents.TemplateProcessor</annotationProcessor>
-					</annotationProcessors>
-				</configuration>
+				<executions>
+					<execution>
+			            <id>process-annotations</id>
+			            <phase>generate-sources</phase>
+			            <goals>
+			                <goal>compile</goal>
+			            </goals>
+						<configuration>
+							<compilerArgs>
+								<arg>-proc:only</arg>
+								<arg>-Aregister=AppTemplates</arg>
+							</compilerArgs>
+							<annotationProcessors>
+								<annotationProcessor>com.dncomponents.TemplateProcessor</annotationProcessor>
+							</annotationProcessors>
+						</configuration>
+					</execution>
+					<execution>
+						<!-- Using an id of default-compile will override the default execution -->
+			            <id>default-compile</id>
+			            <phase>compile</phase>
+			            <goals>
+			                <goal>compile</goal>
+			            </goals>
+        			</execution>
+				</executions>
 			</plugin>
 			<!-- GWT Maven Plugin -->
 			<plugin>
