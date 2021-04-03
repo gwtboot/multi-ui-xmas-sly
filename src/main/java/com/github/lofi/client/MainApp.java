@@ -16,6 +16,7 @@ import com.dncomponents.client.views.appview.PlaceManager;
 import com.github.lofi.client.ui.counter.CounterPlace;
 import com.github.lofi.client.ui.counter.CounterViewImpl;
 import com.github.lofi.client.ui.home.HomePlace;
+import com.github.lofi.client.ui.todo.TodoPlace;
 
 import elemental2.dom.DomGlobal;
 import elemental2.dom.Element;
@@ -48,6 +49,7 @@ public class MainApp implements AcceptsOneElement {
 	public void init() {
 		placeManager.register(HomePlace.HomePlaceRegister.instance);
 		placeManager.register(CounterPlace.CounterPlaceRegister.instance);
+		placeManager.register(TodoPlace.TodoPlaceRegister.instance);
 
 		placeManager.setHomePlace(HomePlace.class);
 		History.fireCurrentHistoryState();
