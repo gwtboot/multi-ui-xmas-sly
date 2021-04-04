@@ -16,6 +16,11 @@ This example uses GWT Boot as Starter Parent: https://github.com/gwtboot/gwt-boo
 
 ![Multi UI Counter VueGWT](src/doc/multi-ui-counter-vuegwt.png?raw=true "Multi UI Counter VueGWT")
 
+### DominoUI
+
+![Multi UI Todo DominoUI](src/doc/multi-ui-todo-domino.png?raw=true "Multi UI Todo DominoUI")
+
+
 ## Building Example
 
 To build the example:
