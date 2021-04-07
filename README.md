@@ -6,7 +6,7 @@ Why? To see that we can combine every UI frameworks in one GWT webapp.
 
 This example uses GWT Boot as Starter Parent: https://github.com/gwtboot/gwt-boot-samples
 
-[![Build Status](https://travis-ci.com/gwtboot/multi-ui-xmas-sly.svg?branch=master)](https://travis-ci.com/gwtboot/multi-ui-xmas-sly)
+[![Build Status](https://travis-ci.com/gwtboot/multi-ui-xmas-sly.svg?branch=main)](https://travis-ci.com/gwtboot/multi-ui-xmas-sly)
 
 ## Examples of Multi UIs
 
