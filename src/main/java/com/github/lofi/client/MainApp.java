@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 import javax.inject.Singleton;
 
 import com.dncomponents.UiField;
-import com.dncomponents.client.components.HasCellComponents;
+import com.dncomponents.client.components.AbstractCellComponent;
 import com.dncomponents.client.components.core.HtmlBinder;
 import com.dncomponents.client.components.core.entities.ItemId;
 import com.dncomponents.client.components.sidemenu.SideMenu;
@@ -61,10 +61,7 @@ public class MainApp implements AcceptsOneElement {
 		// This happens if you click the left menu item
 		contentWrapper.innerHTML = "";
 		contentWrapper.appendChild(element.asElement());
-		if (element instanceof HasCellComponents) {
-			((HasCellComponents) element).resetScrollPosition();
-		}
-
+		AbstractCellComponent.resetScrollOnPage(contentWrapper);
 		// Init Vue component
 		Element elementById = DomGlobal.document.getElementById("simpleCounterComponentContainer2");
 		if (elementById != null) {
