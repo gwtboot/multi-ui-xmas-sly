@@ -20,6 +20,10 @@ This example uses GWT Boot as Starter Parent: https://github.com/gwtboot/gwt-boo
 
 ### DominoUI
 
+At the moment the design of DominoUI (Material Design) is not compatible with the design of DnComponents (Bootstrap). 
+So we use here no CSS at all. This is a general problem of mixing many UI frameworks in one web app: 
+the design are mostly not compatible.
+
 ![Multi UI Todo DominoUI](src/doc/multi-ui-todo-domino.png?raw=true "Multi UI Todo DominoUI")
 
 
